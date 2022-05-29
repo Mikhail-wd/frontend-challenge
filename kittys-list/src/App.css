@@ -1,0 +1,86 @@
+.App {
+  background-color: #2196F3;
+  width: 1440px;
+  height: 64px;
+  margin: auto;
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+}
+
+.nav_block{
+  padding: 5px 20px;  
+}
+.nav_block p{
+  color: #FFFF ;
+}
+
+.active{
+  background-color: #1E88E5;
+}
+.nav_block:first-child{
+  margin-left: 62px;
+}
+
+
+.pussys_list{
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+  margin: 48px 62px;
+  width: 1400px;
+}
+.pussy{
+  width: 225px;
+  height: 225px;
+  margin-right: 48px;
+  margin-bottom: 52px;
+}
+.favor_hollow{
+  position: relative;
+  top: -52px;
+  left: 80px;
+}
+.favor {
+  position: relative;
+  top: -48px;
+  left: 80px;
+}
+.pussy:hover {
+  position: relative;
+  top: -7px;
+  left: -7px;
+  resize: both;
+  box-shadow: 5px 5px 2px rgb(155, 160, 161);
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
