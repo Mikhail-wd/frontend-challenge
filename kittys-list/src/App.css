@@ -17,6 +17,8 @@
   }
 }
 
+
+
 .header {
   display: flex;
   flex-direction: row;
@@ -38,8 +40,7 @@
   margin-left: 62px;
 }
 
-
-.pussys_list{
+.favorite_pussys {
   flex-wrap: wrap;
   display: flex;
   flex-direction: row;
@@ -48,33 +49,79 @@
   margin: 48px 62px;
   width: 1400px;
 }
+
+.pussys_list {
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+  margin: 48px 62px;
+  width: 1400px;
+}
+
+.display {
+  display: flex;
+}
+
+.hide {
+  display: none;
+}
+
 .pussy{
-  width: 225px;
-  height: 225px;
+  max-width: 225px;
+  max-height: 225px;
   margin-right: 48px;
   margin-bottom: 52px;
 }
-.favor_hollow{
-  position: relative;
-  top: -52px;
-  left: 80px;
+
+.pussy img:first-child{
+  width: 225px;
+  height: 225px;
 }
-.favor {
+
+
+.favor_full {
+  display: block;
   position: relative;
   top: -48px;
-  left: 80px;
+  left: 175px;
 }
 .pussy:hover {
   position: relative;
   top: -7px;
   left: -7px;
-  resize: both;
   box-shadow: 5px 5px 2px rgb(155, 160, 161);
 }
-
+.favor{
+  display: none;  
+  position: relative;
+  top: -52px;
+  left: 175px;
+}
+.favor_full{
+  display: none;  
+  position: relative;
+  top: -52px;
+  left: 175px;
+}
+.pussy:hover .favor{
+  display: block;  
+  position: relative;
+  top: -52px;
+  left: 175px;
+}
+.pussy:hover .favor_full{
+  display: block;  
+  position: relative;
+  top: -52px;
+  left: 175px;
+}
 .App-link {
   color: #61dafb;
 }
+
+
 
 @keyframes App-logo-spin {
   from {
